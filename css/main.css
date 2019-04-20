@@ -66,6 +66,13 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
 .logo {
   font-size: 70px;
   color: #d3ab55;
@@ -132,20 +139,19 @@ body {
   position: relative;
   overflow: hidden; }
   .card:hover .card-overlay {
-    left: 0; }
+    top: 50%; }
   .card-overlay {
     position: absolute;
-    top: 0;
-    left: -100%;
+    top: 100%;
     background-color: rgba(211, 171, 85, 0.6);
     color: #fff;
     z-index: 10;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: left .7s; }
+    transition: top .7s; }
     .card-overlay-heading {
+      margin-top: 10%;
       font-family: "Nunito", sans-serif;
       font-size: 50px;
       font-weight: 300;

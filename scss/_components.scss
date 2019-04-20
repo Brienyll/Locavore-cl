@@ -67,22 +67,23 @@
   overflow: hidden;
 
   &:hover .card-overlay {
-    left: 0;
+    top: 50%;
   }
 
   &-overlay {
     position: absolute;
-    top: 0;
-    left: -100%;
+    top: 100%;
     background-color: rgba($color-primary, .6);
     color: $color-white;
     z-index: 10;
-    @include flexLayout;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     @extend %fullSpace;
-    transition: left .7s;
+    transition: top .7s;
 
     &-heading {
+      margin-top: 10%;
       font-family: $font-nunito;
       font-size: 50px;
       @include textStyles(capitalize);
