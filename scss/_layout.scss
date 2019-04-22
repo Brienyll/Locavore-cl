@@ -13,28 +13,29 @@
       height: 100vh;
       background-color: $color-dark;
       position: fixed;
-      left: 0;
+      left: -50vw;
+
 
       .left-img {
         width: 50%;
         position: absolute;
         box-shadow: 0 15px 60px rgba($color-black, .4);
-        opacity: .9;
         border-radius: 10px;
       }
 
       .left-img-1 {
-        top: 15%;
-        left: 15%;
+        top: 10%;
+        left: 40%;
       }
       .left-img-2 {
         top: 35%;
-        left: 25%;
+        left: 9%;
       }
       .left-img-3 {
         top: 55%;
-        left: 35%;
-        height: 25%;
+        left: 40%;
+        height: 30%;
+        object-fit: cover;
       }
     }
     &-right {
@@ -42,7 +43,7 @@
       height: 100vh;
       background-color: #1f1d1d;
       position: fixed;
-      right: 0;
+      right: -50vw;
       @include flexLayout;
     }
 

@@ -1,4 +1,4 @@
-.card-overlay, .card-img {
+.hamburger-menu .menu, .card-overlay, .card-img {
   width: 100%;
   height: 100%; }
 
@@ -22,29 +22,29 @@ body {
       height: 100vh;
       background-color: #262626;
       position: fixed;
-      left: 0; }
+      left: -50vw; }
       .navbar-navigation-left .left-img {
         width: 50%;
         position: absolute;
         box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4);
-        opacity: .9;
         border-radius: 10px; }
       .navbar-navigation-left .left-img-1 {
-        top: 15%;
-        left: 15%; }
+        top: 10%;
+        left: 40%; }
       .navbar-navigation-left .left-img-2 {
         top: 35%;
-        left: 25%; }
+        left: 9%; }
       .navbar-navigation-left .left-img-3 {
         top: 55%;
-        left: 35%;
-        height: 25%; }
+        left: 40%;
+        height: 30%;
+        object-fit: cover; }
     .navbar-navigation-right {
       width: 50vw;
       height: 100vh;
       background-color: #1f1d1d;
       position: fixed;
-      right: 0;
+      right: -50vw;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -154,6 +154,23 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: capitalize; }
+
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  position: fixed;
+  top: 10%;
+  right: 5%; }
+  .hamburger-menu .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer; }
+    .hamburger-menu .menu-line {
+      width: 100%;
+      height: 40px;
+      background-color: #d3ab55; }
 
 .logo {
   font-size: 70px;
