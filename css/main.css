@@ -120,6 +120,9 @@ body {
     @media (max-width: 1300px) {
       .about-us-left {
         left: 40px; } }
+    @media (max-width: 800px) {
+      .about-us-left {
+        display: none; } }
     .about-us-left img {
       width: 100%;
       opacity: .7; }
@@ -133,9 +136,9 @@ body {
     @media (max-width: 1300px) {
       .about-us-right {
         padding: 0 100px; } }
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       .about-us-right {
-        padding: 0 60px; } }
+        width: 100%; } }
     .about-us-right .stars {
       margin: 30px 0; }
       @media (max-width: 1000px) {
@@ -201,6 +204,11 @@ body {
     font-weight: 300;
     letter-spacing: 2px;
     text-transform: capitalize; }
+    @media (max-width: 800px) {
+      .footer-copyright-pragraph {
+        width: 70%;
+        margin: auto;
+        text-align: center; } }
 
 .hamburger-menu {
   width: 40px;
@@ -209,6 +217,10 @@ body {
   top: 10%;
   right: 5%;
   z-index: 99; }
+  @media (max-width: 800px) {
+    .hamburger-menu {
+      width: 35px;
+      height: 35px; } }
   .hamburger-menu .menu {
     display: flex;
     flex-direction: column;
@@ -221,6 +233,9 @@ body {
       background-color: #d3ab55;
       transform-origin: right;
       transition: all .5s .5s; }
+      @media (max-width: 800px) {
+        .hamburger-menu .menu-line {
+          height: 3px; } }
 
 .logo {
   font-size: 70px;
@@ -311,6 +326,11 @@ body {
   .main-btn:hover {
     background-color: #d3ab55;
     color: #262626; }
+  @media (max-width: 800px) {
+    .main-btn {
+      width: 150px;
+      height: 35px;
+      font-size: 12px; } }
 
 .card {
   width: 33.3333%;
